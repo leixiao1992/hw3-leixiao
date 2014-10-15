@@ -39,6 +39,7 @@ extends JCasAnnotator_ImplBase  {
 		doc.setRelevanceValue(rel);
 		doc.addToIndexes();
 		
+		//System.out.println(qid+" "+rel+" "+txt);
 		//Adding populated FeatureStructure to CAS
 		jcas.addFsToIndexes(doc);
 	}
